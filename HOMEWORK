@@ -1,1 +1,27 @@
+Q1.HOW MANY RESOURCES DO WE HAVE IN IAM.
+ANS- 4  A)user
+        b)groups
+        c)policies
+        d)roles
+Q2.DEPLOYMENT MODEL IN IAM?
 
+Q3.IDENTITIES IN IAM?
+
+Q4.WHAT IS AN IAM USER?
+ANS- It is an entity/person created by root user 
+     Who can use/interact with aws resources.
+
+Q5.WHAT IS THE IAM GROUP?
+ANS-  IAM group is collection of user.
+      We have to give permission to an 10 user.
+      Its easy to create a group add 10 user and attach permission.
+
+Q6.WHAT IS AN IAM POLICY
+ANS- Policy nothing but bunch of permission.
+     We create cutomize policy for an user requirement.
+     Create policy select effect what action can be allow for resources.
+
+Q7.WHAT IS IAM ROLE
+ANS-  It is more secure way to access any resource in ec2 Without sharing any credentials.
+      for that create role and select service where we attach role and add permision like which resource
+      you need on ec2 and create role.
