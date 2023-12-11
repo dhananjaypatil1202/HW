@@ -1,3 +1,46 @@
+INTRODUCTION:-
+Q.1 What is cloud computing?
+-It deliver on demand computing services server ,storage ,database,application, networking tools and its resources over the internet.
+-All are these services present at remote location anywhere and anytime.
+-We take these service via internet.So disadvantage of cc is without internet we can`t able to acces cloud services.
+-When you want to use those services you are going to pay for services.
+-When you are done using it when you no need for services you are not going to pay anymore.
+-So basically Cloud give you really nice interface you can easily access.
+-Like tarditional way you need servers ,manpower to handle these serers ,cooling system,all network devices,hardware if your website grows you need more servers. 
+-In CC you no need all those resources only required internet to acess all those cloud services.
+
+Q2.Deployment models in Cloud
+ANS-    Public cloud
+        Private cloud
+        Hybrid cloud
+        community cloud
+
+Q3.Service models in cloud?
+ANS-    SAAS
+        PAAS
+        IAAS
+
+Q4.Architecture of a cloud
+
+
+Q5.AWS global insfra count
+ANS: 32 geographical regions in wolrd. AWS build there infra in 32 region
+     And 102 availibilty centers in regions.
+
+Q6.Q.So why we use regions.
+-to solve latency problem like suppose you are in mumbai region when you search and website and that website 
+ hosted in another region like canada. so it takes time to response . 
+-But any person in canada region and he search web within second response it. Bcz region is near.
+-when you hosted any website in near by region.And whenever you search web it response it within sec
+-Choosing a region close to your users can reduce latency.
+
+Q7.What is service ?and what are resources?
+ANS:- Resources are entity which are present in service.
+        
+
+
+
+IAM:-----
 Q1.HOW MANY RESOURCES DO WE HAVE IN IAM.
 ANS- 4  A)user
         b)groups
