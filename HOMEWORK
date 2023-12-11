@@ -25,3 +25,38 @@ Q7.WHAT IS IAM ROLE
 ANS-  It is more secure way to access any resource in ec2 Without sharing any credentials.
       for that create role and select service where we attach role and add permision like which resource
       you need on ec2 and create role.
+
+Q8.Where do we attach identity based policy?
+ANS- We attach identity based policy to an user, groups and role.
+
+Q9.Where do we attach resource based policy?
+ANS- WE attach resource based to an resources.
+
+Q10.can we able to create policy via json code?
+ANS- Yes
+
+Q11.If one user has created by default, which permission has been assigned to that user?
+- When user is create no permission user does not have any permission.
+
+Q12.What is dominar policy
+ANS- powerfull permission given to an user
+
+Q13.What is ARN?What are the field of arn?
+ANS- ARN is an unique identity gives to any user or resources
+        Fields- arn
+                partition
+                service
+                region
+                accountid
+                resources id
+
+Q14.How many types of ARN partition?
+ANS- 3 partition : a]standard partition 
+                   b] us government cloud.
+                   c] aws china
+
+Q15.What are the tags?
+ANS- Unique identity assign to an user or resources
+     It consist of key and value.
+     Key is an identifier and values provides information.
+     It will helpful to identity which user are from which environment like tester and developer.
