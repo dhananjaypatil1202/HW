@@ -6,6 +6,7 @@ ANS- 4  A)user
 Q2.DEPLOYMENT MODEL IN IAM?
 
 Q3.IDENTITIES IN IAM?
+ANS- Who can access resources like an user is an identity.
 
 Q4.WHAT IS AN IAM USER?
 ANS- It is an entity/person created by root user 
