@@ -53,7 +53,7 @@ ANS- Who can access resources like an user is an identity.
 
 Q4.WHAT IS AN IAM USER?
 ANS- It is an entity/person created by root user 
-     Who can use/interact with aws resources.
+     It is an entity Who can use/interact with aws resources.
 
 Q5.WHAT IS THE IAM GROUP?
 ANS-  IAM group is collection of user.
