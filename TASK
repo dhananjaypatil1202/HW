@@ -36,8 +36,9 @@ Why we create resource based policy?
 Another Way
 
 Q4.Create policy to create the user only and can attach policy to them.
-
-
+list -list users
+read -GetAccountPasswordPolicy
+write - create user
 
 Q5.Create a policy to place the user in a group only.
 
