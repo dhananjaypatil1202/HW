@@ -1,13 +1,13 @@
 POLICY:-
 
 Q1.Create a policy to access all objects in a specific bucket.
------ create policy
+-----  create policy select service s3
       -allow for actions list and read permssion.
       -give bucket arn
-       -create policy and attach to user
+      -create policy and attach to user
 
 Q2.Create a policy to access only 2 objects in a specific bucket.
------ create policy
+-----  create policy select service s3
       -allow for actions list and read permssion.
       -give bucket arn also give objects arn.
       -create policy and attach to user
@@ -38,7 +38,8 @@ Why we create resource based policy?
 Another Way
 
 Q4.Create policy to create the user only and can attach policy to them.
------ list -list users
+----- create policy and select service iam 
+      list -list users
       read -GetAccountPasswordPolicy
       write - create user
 
@@ -50,7 +51,8 @@ Q5.Create a policy to place the user in a group only.
       write= add user
 
 Q6. Policy to get "read" access of all users, groups but not policy.
----- create policy to a read all users and group but but not policy
+----  create policy select service iam
+     create policy to a read all users and group but but not policy
      create policy and allow for actions :- 
      list - list users, list groups.
 
