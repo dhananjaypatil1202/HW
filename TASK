@@ -1,14 +1,16 @@
+POLICY:-
+
 Q1.Create a policy to access all objects in a specific bucket.
--create policy
--allow for actions list and read permssion.
--give bucket arn
--create policy and attach to user
+----- create policy
+      -allow for actions list and read permssion.
+      -give bucket arn
+       -create policy and attach to user
 
 Q2.Create a policy to access only 2 objects in a specific bucket.
---create policy
--allow for actions list and read permssion.
--give bucket arn also give objects arn.
--create policy and attach to user
+----- create policy
+      -allow for actions list and read permssion.
+      -give bucket arn also give objects arn.
+      -create policy and attach to user
 
 Q3.Create a policy to deny the access of Specific bucket.
 -create resource based policy for bucket in json deny for all actions 
@@ -36,13 +38,28 @@ Why we create resource based policy?
 Another Way
 
 Q4.Create policy to create the user only and can attach policy to them.
-list -list users
-read -GetAccountPasswordPolicy
-write - create user
+----- list -list users
+      read -GetAccountPasswordPolicy
+      write - create user
 
 Q5.Create a policy to place the user in a group only.
+----- create policy for user to add another user in group
+      allow for action and select actions
+      read= list user, list group, list group for user
+      read= get group
+      write= add user
 
-Q.10Create a resource based policy and attach to S3_B16 Bucket & only sunny user can able to access that bucket.
+Q6. Policy to get "read" access of all users, groups but not policy.
+---- create policy to a read all users and group but but not policy
+     create policy and allow for actions :- 
+     list - list users, list groups.
+
+Q7. Policy to get access to billing, ec2 and cloudwatch.
+---- we cannot able to give access of billing bcoz only user can acess billing
+     give permission of ec2 and cloudwatch for user.
+    
+
+Q.10 Create a resource based policy and attach to S3_B16 Bucket & only sunny user can able to access that bucket.
 -give s3 read permission to sunny user.
 -and create resource based policy allow all action for s3_b16 bucket
 -{
@@ -61,6 +78,40 @@ Q.10Create a resource based policy and attach to S3_B16 Bucket & only sunny user
     ]
 }
 
+USERS:-
+
+Q1. Add four different users in the organisation account.
+---- add 4 users 
+
+Q2. Add one user without permission.
+---- add 1 user and don't give any permission.
+
+Q3. Add user with console & programmatic user.
+---- add user give console access
+     for programmatic user generate access keys.
+     put access keys to cloud shell.
+
+Q4. If IAM users are created w/o password, then how can you set the password of that IAM user as an Admin.
+---- ceate user without give console access
+     after root user give console access from root user account enable console access and set auto generated pass
+     tick on when user login create pass.
+
+Q5. Add User Without Any permission (permission denied)
+---- add 1 user and don't give any permission.
+
+Q6. S3 Read Only Access
+---- create policy for s3 allow for actions 
+     list : list buck
+     read : read obj.
+
+Q7. Jarvis Admin Access
+---- create user jarvis
+     attach permission administration access
+
+Q8. Add User with Programmatic Access
+---- add user
+     generate access keys
+     put in cloud shell .
 
 
 
