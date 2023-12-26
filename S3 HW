@@ -1,0 +1,29 @@
+Q.Difference between Block storage & Object Storage ?
+--> BLOCK STORAGE:- When we save any data into block storage it will divides data and stored into evenly size of blocks
+                    It is used in form of hardrive HDD, SDD.
+                    It would not contain metadata.
+   Object storage:- It is an objetc level storage.
+                     
+
+
+Difference between static website & dynamic website ?
+What are the naming rules ?
+What is the major resource of S3 Bucket ?
+Why do we need to host static websites instead of dynamic websites ?
+What is versioning & Why do we need versioning ?
+What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Why is MFA Delete important in S3 Bucket object level ?
+What is S3 Multipart upload ?
+What are the storage classes in Amazon S3 ?   —------------------- IMP
+What is ACL ?
+Why do we need ACL ?
+What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+How can we make our bucket public ?
+How can we give public access to our bucket ?
+Aws pricing factor of the S3 Service.
+How can we make our object public ?
+How can we configure the static website logs in s3 ?
+What is CORS ?
+What is S3 Inventory ?
+What does it mean by Requester pays ?
+What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
