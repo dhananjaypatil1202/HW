@@ -1,29 +1,93 @@
-Q.Difference between Block storage & Object Storage ?
+Q1. Difference between Block storage & Object Storage ?
 --> BLOCK STORAGE:- When we save any data into block storage it will divides data and stored into evenly size of blocks
                     It is used in form of hardrive HDD, SDD.
                     It would not contain metadata.
-   Object storage:- It is an objetc level storage.
+   Object storage:- It is an object level storage.
+                    When store any object it store as it is.It will not divide into blocks.
+                    We cant install OS.
                      
 
+Q2. Difference between static website & dynamic website ?
+--> Static Website:- Static website has no database. 
+                     It Just like advertisement/portfolio We cant give any details.
+    Dynamic Website:- It has Data base
+                      When we interact with websites.
 
-Difference between static website & dynamic website ?
-What are the naming rules ?
-What is the major resource of S3 Bucket ?
-Why do we need to host static websites instead of dynamic websites ?
-What is versioning & Why do we need versioning ?
-What are the objects and types of objects that we are uploading into the S3 Bucket ?
-Why is MFA Delete important in S3 Bucket object level ?
-What is S3 Multipart upload ?
-What are the storage classes in Amazon S3 ?   —------------------- IMP
-What is ACL ?
-Why do we need ACL ?
-What is a Life cycle policy ? Why do we need to use the life cycle rule ?
-How can we make our bucket public ?
-How can we give public access to our bucket ?
-Aws pricing factor of the S3 Service.
-How can we make our object public ?
-How can we configure the static website logs in s3 ?
-What is CORS ?
-What is S3 Inventory ?
-What does it mean by Requester pays ?
-What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+Q3. What are the naming rules ?
+--> for best practices don’t gives bucket name as ip address and domain name
+    name should be lower cases and buck name must be globally unique.
+    We not gives an special char to starting of the name we able to give middle of name.
+
+Q4. What is the major resource of S3 Bucket ?
+--> Bucket
+
+Q5. why do we need to host static websites instead of dynamic websites ?
+--> bcz Static Website consist of HTML, CSS dont need any database.
+    So its easy do 
+
+Q6. What is versioning & Why do we need versioning ?
+--> It will protect update, existing objects and accidental delete objexts.
+    When we upload upadted any object with same name it will create versions of that object.
+
+Q7. What are the objects and types of objects that we are uploading into the S3 Bucket ?
+--> Object nothing but an data we upload in bucket
+    Objects like document, images, etc but we cant install OS.
+
+Q8. Why is MFA Delete important in S3 Bucket object level ?
+--> When any user upload or download any object WIthou MFA CODE he is not able to do any action.
+
+Q9. What is S3 Multipart upload ?
+--> It allows users to upload large object in part, which are then combined into a single object.
+   It is useful for files when file larger than 100 MB.
+
+Q10. What are the storage classes in Amazon S3 ?   —------------------- IMP
+--> Standard class
+    Standard IA
+    IA ONE ZONE
+    INTELLIGENT TIERING
+    GLACIER INSTANT RETRIEVAL
+    GLACIER FLEXIBLE RETRIVAL
+    GLACIER DEEP ARCHIEVE
+Q11. What is ACL ?
+--> To change object ownership you have to enable ACL.
+    When we need to make object publically accesible
+    For that ACL enable and make object publically accesible using ACL.
+
+Q12. Why do we need ACL ?
+--> To change object ownership you have to enable ACL.
+    After an enbled When any user upload object in bucket he is the owner of object rather tham bucket owner.
+
+Q13. What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+--> How we can manage storage for cost saving for that create lifecycle rule
+    We give condition after that when condition satisfy data inside bucket are move to
+    one storage class to another class what we specify in rule.
+
+Q14. How can we make our bucket public ?
+--> Unblock public access
+
+Q15. How can we give public access to our bucket ?
+--> bucket --> permission --> unblock public access.
+
+Q16. Aws pricing factor of the S3 Service.
+
+Q17. How can we make our object public ?
+--> For that make our bucket public
+    After enabled ACL and make object public using ACL
+
+Q18. How can we configure the static website logs in s3 ?
+--> Create cloud trails and mention bucket where you want to store logs.
+    
+Q19. What is CORS ?
+
+Q20. What is S3 Inventory ?
+
+Q21. What does it mean by Requester pays ?
+--> When we enable requestor pay after that any user want to access any object he is responsibkle to
+    pay for data transfers
+
+Q22. What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+--> 2nd word is edge location/CDN
+    When we need to increase spped of upload/downloading/data transfer of any object from long distance/another region buckets
+    For that we enabled Edge location.
+    After that our request pass from nearest edge location rather than the main aws region of bucket.
+    
