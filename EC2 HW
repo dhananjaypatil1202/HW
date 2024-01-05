@@ -1,1 +1,136 @@
+Q1.What is EC2, Why do we need EC2 service in cloud computing ?
+-->With help of EC2 we cretae an virtual machine called as instances in EC2.
+   Bcz it provide scalability, fault tolerance, high availability with help of different resources.
+   We have only pay for what we use.
+   Anytime we create instances when we no need after that simply delete that m/c.
+
+Q2.Features of Amazon EC2 ?
+-->it provide different types of machine we create as own requirement on the basis work loads.
+   On our demand we scale up & scale down on our demand.
+   We also choose different price model as our requirement.
+   
+Q3.What is Hypervisor ? and its types ?
+--> It is an software that creates and runs virtual machines on hardware
+    Types Bare metal and Hosted
+    Bare metal means these hypervisors run directly on hardware without need any OS.
+    we use Xzen in AWS,
+    Hosted means it runs on OS. SO it will takes hardware resources from host OS. EX:- Virtual Box.
+                      
+Q4.Where we use hypervisor
+--> 
+
+Q5.Steps to create an EC2 instance.
+--> Give name of instance 
+    Choose AMI as our requirement AMI decide os like Redhat,ubuntu,linux
+    Choose instance types like how many cpu, ram we required.
+    Generate key pair either you have already a key pair choose key pairs
+    choose Network group and set inbound and outbound rules.
+    Specify how many ram required
+
+Q6.EC2 Instance state ?
+--> PENDING
+    RUNNING
+    STOPPING
+    STOP
+    SHUTTING-DOWN
+    TERMINATED
+
+Q7.How many types of EC2 Instance-State codes ?
+--> 
+
+Q8.What is the meaning of server hibernating mode ?
+--> When we hibernate our instance after outinstance go to sleep mode.
+
+Q9.What is KMS ?
+--> Basically is an service use for encryption of columes.
+    KMS for key with help of keys Volumes are encrypted.
+    
+Q10.AWS Amazon EC2 Instance types ?
+--> General purpose
+    Compute optimized
+    Memory optimized
+    Storage optimized
+    Accelerated computing.
+
+Q11.How many types of status checks happen in aws ?
+--> 2/2 - ALL ok
+    0/1-  Software issue
+    0/2-  hardware issue
+
+Q12.When we see the global view option in ec2 service ?
+--> It shows All regions of aws and how many resources you are create in EC2.
+
+Q13.When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
+--> Bcz it is an 1st region launched by AWS 
+    When any new service oer resources are comes in AWS so 1st it launch in VIRGINIAN region,
+    High availability of this region bcz It has 6 AZs.
+
+Q14.What are EBS Volumes and its types ?
+--> EBS is an network level storage and it is persistent.
+    And data are stored in the form of blocks and os runs on these volums.
+    General purpose SDD 
+    Provisioned IOPSSDD
+    Throughput HDD 
+
+Q15.Purpose of Using EBS volumes ?
+--> It is an network level storage 
+    Persistent 
+    As our own requirement we increase and decrease size.
+    It is easy to take backup (snapshot)
+    It easy to detach and attach to another instance no chances to data lost.
+    
+Q16.How many types of purchasing options do we have in aws ec2 ?
+-->  On demand- 
+     Dedicated host
+     Dedicated instance 
+     Spot instance
+     Reserved instance
+
+Q17.Difference between AWS AMI Image & AWS Template ?
+--> We create Template for autoscaling group it means when instance are created same replica \
+    created which we are configured in template.    
+    AWS AMI image means backup of software or volume
+    suppose that you have instamce all webserver application are configured and you need another instance 
+    with same configuration so why we need to waste time for creating another instance
+    Create Image of existing instance after create instamce from AMI IMAGE. 
+
+Q18.What is NIC & it’s types ?
+--> 
+
+Q19.What is elastic IP ? & WHY were we used ?
+--> Elastic IP means static like it will not change over time when we stopped an EC2 machine
+    bcz it will change when we stopped an ec2 m/c.
+
+Q20.What is the snapshot of why we use it ?
+--> snapshot is an backup and point-in-copy of ebs volumes
+    for backup purpose we use snapshot.
+
+Q21.How can we save money in snapshot costing, if an automated snapshot has been created ?
+--> for that we create snapshot 
+
+Q22.What is the lifecycle manager in snapshot ?
+--> suppose we have to take backup/snapshot of volumes daily for that set
+How does the Amazon lifecycle manager work ?
+Difference between Security Group & NACL ?
+What are NACL & Its types ?
+How many IP Addresses can we attach to the instances ?
+How many types of volume states do we have ?
+What is a key pair, and its types ?
+What is load balancer and its types ?
+How does the load balancer work in the backend? Can you explain it ?
+Features of Load Balancers ?
+What is ASG ? & Its types ?
+What is a Health Check ?
+What is the threshold ?
+What is the group of LB ?
+Why do we prefer ALB over ALB ?
+Difference between Web server & Application server ?
+What is the target group ?
+What is the desired capacity in ASG ?
+How many types of the Scaling option ?
+Scaling plans ?
+Types Auto scaling
+Difference between vertical scaling and horizontal scaling ?
+Difference between AMI & Snapshot ?
+What is difference between EBS/EFS/S3
 
