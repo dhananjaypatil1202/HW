@@ -8,10 +8,10 @@ Q1. Difference between Block storage & Object Storage ?
                      
 
 Q2. Difference between static website & dynamic website ?
---> Static Website:- Static website has no database. 
+--> Static Website:- Static website has no database. and no server side code execution
                      It Just like advertisement/portfolio We cant give any details.
-    Dynamic Website:- It has Data base
-                      When we interact with websites.
+    Dynamic Website:- Dynamic web has dynamic content which will change on the user request.
+                      It has database 
 
 Q3. What are the naming rules ?
 --> for best practices don’t gives bucket name as ip address and domain name
