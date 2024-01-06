@@ -17,7 +17,7 @@ Q3.What is Hypervisor ? and its types ?
     Hosted means it runs on OS. SO it will takes hardware resources from host OS. EX:- Virtual Box.
                       
 Q4.Where we use hypervisor
---> 
+--> on hardware to run machine.
 
 Q5.Steps to create an EC2 instance.
 --> Give name of instance 
@@ -109,28 +109,106 @@ Q21.How can we save money in snapshot costing, if an automated snapshot has been
 --> for that we create snapshot 
 
 Q22.What is the lifecycle manager in snapshot ?
---> suppose we have to take backup/snapshot of volumes daily for that set
-How does the Amazon lifecycle manager work ?
-Difference between Security Group & NACL ?
-What are NACL & Its types ?
-How many IP Addresses can we attach to the instances ?
-How many types of volume states do we have ?
-What is a key pair, and its types ?
-What is load balancer and its types ?
-How does the load balancer work in the backend? Can you explain it ?
-Features of Load Balancers ?
-What is ASG ? & Its types ?
-What is a Health Check ?
-What is the threshold ?
-What is the group of LB ?
-Why do we prefer ALB over ALB ?
-Difference between Web server & Application server ?
-What is the target group ?
-What is the desired capacity in ASG ?
-How many types of the Scaling option ?
-Scaling plans ?
-Types Auto scaling
-Difference between vertical scaling and horizontal scaling ?
-Difference between AMI & Snapshot ?
-What is difference between EBS/EFS/S3
+--> suppose we have to take backup/snapshot of volumes daily,monthly,weekly
+    For that create lifecycle manager policy defines time and frequency on the basis
+    of policy it takes snapshot at given time.
+
+Q23.How does the Amazon lifecycle manager work ?
+--> we create policy and add volums with help of tags & defines frequency and time
+    on the basis of frquency and given time it takes snapshot
+    suppose we give frquency dailt specify time 9:00AM every day at 9:00AM snapshot will be created.
+
+Q24.Difference between Security Group & NACL ?
+--> SG work on instance level where nacl are stateless
+    NACL work on subnet and VPC level where dg are stateful.
+
+Q25.What are NACL & Its types ?
+--> NACL are apply on subnet level so by default rules is apply to all instances which are in subnet.
+    TYPES:- Default NACL & Custom NACL.
+    When we create a New VPC so default NACL are created it allows for all inbound outbounf traffic.
+    Where custom nacl are created by user as our requirement we also for inbound and outbound rules.
+
+Q26.How many IP Addresses can we attach to the instances ?
+--> Public and private.
+
+Q27.How many types of volume states do we have ?
+--> Creating
+    available
+    In use
+    Deleting 
+    Deleted.
+
+Q28.What is a key pair, and its types ?
+--> Key pair is an secure login information for of your instances
+    with help of key pair we login an remote m/c on our local machine
+    Public key and pvt key
+    Public is stored to AWS and pvt key files is store on our local m/c.
+
+Q29.What is load balancer and its types ?
+--> load balancer distributes incoming web application traffic across multiple targets/instances in multiple AZ.
+    Types :- classical, application, network and gateway.
+
+Q30. How does the load balancer work in the backend? Can you explain it ?
+--> Whenever traffic comes on load balancer listeners check for connection request from clients with help of ports what you configured
+    it will forward tarffic to registered targets using round robin algorithm.
+    LB continously monitor instance health using ping if any instance is unhealthhy it will forward traffic to only healthy instances.
+    
+
+Q31. Features of Load Balancers ?
+--> 
+
+Q32. What is ASG ? & Its types ?
+--> Basically ASG will decide desire, maximum, minimum size of autoscaling group.
+    We wiil define capacity of instances as per our requirement we also give target values of cpu
+    utilization. On the basis of that it will scale up and scale down targets when traffic increases.
+
+Q33. What is a Health Check ?
+--> It check healths of instance where an instance face any problem like software or hardware problem.
+
+Q34. What is the threshold ?
+--> it means specific value limit. Whenever it reaches value limit after action is performed.
+
+Q35.What is the group of LB ?
+--> 
+
+Q36.Why do we prefer ALB over ALB ?
+-->   
+
+Q37.Difference between Web server & Application server ?
+-->
+
+Q38.What is the target group ?
+--> When we use ALB at that time we have to create Target group
+    We add instances in target group, and add group to ALB.
+    
+Q39.What is the desired capacity in ASG ?
+--> It means minumim no of running servers when we launch ASG after it creates instances
+    Suppose we have to give Desired capacity 2 so in every situation minimum 3 instances runs load will increase or decrease no matters.
+
+Q40.How many types of the Scaling option ?
+--> Vertical scaling
+    Horizontal Scaling.
+
+Q41.Scaling plans ?
+-->
+
+Q42.Types Auto scaling
+--> Dynamic scaling
+    Predictive scaling 
+    Schedule Scaling 
+
+Q43.Difference between vertical scaling and horizontal scaling ?
+--> Vertical scaling:- we scale up manually existing instance rather than create replica of existing instance.
+    Horizontal Scaling:- It means whenever traffic increses it will automatically scale up same replica of instance what will you configure in template
+
+Q44.Difference between AMI & Snapshot ?
+--> AMI consist of application servers and os which are need to create instances
+    Snapshot is backup of volumes.
+
+Q45.What is difference between EBS/EFS/S3
+--> EBS :- Ebs is an block level storage & block storage divide data into blocks
+           OS are install in EBS & It is used in form of HDD and SSD.
+    EFS:- 
+    S3:- It is an object level storage when we storage any object it will store as it is not divides into blocks
+         We store meta data.
 
